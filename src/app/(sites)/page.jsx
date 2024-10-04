@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
 
-        <div className="absolute bottom-16 lg:bottom-1/4 w-11/12 flex justify-center">
+        <div className="absolute bottom-16 md:bottom-1/4 w-11/12 flex justify-center">
           <div className="relative w-5/12 lg:w-6/12 flex justify-center">
           <Image src={"/Place Your Image Here3 copy.png"} alt="" width={400} height={400} className="object-contain"/>
           </div>
@@ -78,7 +78,7 @@ FILESORNOTES.</p>
         </div>
 
 
-        <div className="absolute bottom-16 lg:bottom-1/4 w-11/12 flex justify-center">
+        <div className="absolute bottom-16 md:bottom-1/4 w-11/12 flex justify-center">
           <div className="relative w-5/12 lg:w-6/12 flex justify-center">
           <Image src={"/Place Your Image Here3 copy.png"} alt="" width={400} height={400} className="object-contain"/>
           </div>
