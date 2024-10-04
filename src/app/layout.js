@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
+import { Anton, Cormorant, Inter, Montserrat } from "next/font/google"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -11,6 +13,10 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const montserrat=Montserrat({ subsets: ["latin"],variable: "--font-monserat", })
+const inter = Inter({ subsets: ["latin"],variable: "--font-inter", });
+const anton=Anton({ subsets: ["latin"],weight:["400"],variable: "--font-anton", })
+const cormorant=Cormorant({ subsets: ["latin"],variable: "--font-cormorant", })
 
 export const metadata = {
   title: "Create Next App",
@@ -21,9 +27,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cormorant.variable} ${inter.variable} ${montserrat.variable} ${anton.variable}`}
       >
+        <div className="w-screen bg-gradient-to-b from-[#67938C] to-transparent">
+        <Navbar/>
         {children}
+        </div>
       </body>
     </html>
   );
