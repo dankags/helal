@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${cormorant.variable} ${inter.variable} ${montserrat.variable} ${anton.variable}`}
       >
-        <div className="overflow-hidden w-screen bg-gradient-to-b from-[#67938C] to-transparent">
-        <Navbar/>
+        <div className="w-screen flex flex-col overflow-hidden bg-gradient-to-b from-20 from-[#67938C] to-transparent">
+          <Navbar/>
         {children}
         </div>
       </body>

@@ -37,25 +37,42 @@ const TimeCounter = () => {
   }
 
   return (
-    
-    <div className="w-6/12  rounded-xl py-5 px-10 flex flex-col justify-between gap-12 bg-[#328f85]">
-      <div className="flex items-center justify-center"><p className="font-[family-name:var(--font-montserrat)] font-semibold text-7xl capitalize text-white">{timeLeft.days >= 10 ? timeLeft.days:`0${timeLeft.days}`} days to go</p></div>
-      <div className=" flex items-center justify-between">
-        <div className="flex flex-col gap-3 items-center text-white">
-            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-7xl">{timeLeft.days >= 10 ? timeLeft.days:`0${timeLeft.days}`}</div>
-            <span className="font-[family-name:var(--font-montserrat)] font-light text-base">Days</span>
+  
+<div className="mt-6 w-10/12 lg:w-4/12 overflow-hidden rounded-xl lg:px-4 flex flex-col justify-between gap-4 lg:gap-6 bg-[#328f85]">
+      <div className="flex items-center justify-center p-2">
+        <h5 className="w-full py-1 overflow-hidden break-words font-semibold text-2xl lg:text-4xl text-center capitalize text-white">
+          {timeLeft.days >= 10 ? timeLeft.days : `0${timeLeft.days}`} days to go
+        </h5>
+      </div>
+      
+      <div className="w-full flex items-center justify-around p-2 bg-secondary">
+        <div className="w-1/3 flex flex-col items-center text-white">
+          <div className="w-full text-center overflow-hidden text-ellipsis font-semibold text-2xl lg:text-4xl">
+            {timeLeft.days >= 10 ? timeLeft.days : `0${timeLeft.days}`}
+          </div>
+          <span className="font-light text-xs lg:text-sm">Days</span>
         </div>
-        <div className="flex flex-col gap-3 items-center text-white">
-            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-7xl">{timeLeft.hours >= 10 ? timeLeft.hours:`0${timeLeft.hours}`}</div>
-            <span className="font-[family-name:var(--font-montserrat)] font-light text-base">Hours</span>
+
+        <div className="w-1/3 flex flex-col items-center text-white">
+          <div className="w-full text-center overflow-hidden text-ellipsis font-semibold text-2xl lg:text-4xl">
+            {timeLeft.hours >= 10 ? timeLeft.hours : `0${timeLeft.hours}`}
+          </div>
+          <span className="font-light text-xs lg:text-sm">Hours</span>
         </div>
-        <div className="flex flex-col gap-3 items-center text-white">
-            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-7xl">{timeLeft.seconds >= 10 ? timeLeft.seconds:`0${timeLeft.seconds}`}</div>
-            <span className="font-[family-name:var(--font-montserrat)] font-light text-base">Seconds</span>
+
+        <div className="w-1/3 flex flex-col items-center text-white">
+          <div className="w-full text-center overflow-hidden text-ellipsis font-semibold text-2xl lg:text-4xl">
+            {timeLeft.seconds >= 10 ? timeLeft.seconds : `0${timeLeft.seconds}`}
+          </div>
+          <span className="font-light text-xs lg:text-sm">Seconds</span>
         </div>
       </div>
-  </div>
-  )
+    </div>
+
+  );
 }
+
+
+
 
 export default TimeCounter 
