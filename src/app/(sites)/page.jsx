@@ -11,10 +11,10 @@ const DynamicComponent = dynamic(() => import ('@/components/TimeCounter'), {
 
 export default function Home() {
   return (
-    <div className=" w-screen flex items-center justify-items-center bg-gradient-to-b from-[#67938C] to-transparent">
+    <div className="overflow-hidden w-screen flex items-center justify-items-center bg-gradient-to-b from-[#67938C] to-transparent">
     
       <div className="w-full overflow-hidden flex flex-col items-center mt-6 gap-4">
-        <div className="overflow-x-hidden w-5/12 aspect-square relative ">
+        <div className=" w-5/12 aspect-square relative ">
         <Image src={"/MainPageLogo.png"} alt="" fill className="object-contain"/>
         </div>
         <h5 className="font-[family-name:var(--font-cormorant)] font-semibold text-8xl text-[#F4852A]">Coming Soon</h5>
@@ -97,21 +97,22 @@ FILESORNOTES.</p>
 
           <div className="absolute top-0 px-4 py-12 w-full flex items-start z-20">
             <div className="w-1/2 flex flex-col gap-4">
-              <h4 className="font-[family-name:var(--font-inter)] font-bold text-white text-5xl">TECH</h4>
-              <h4 className="font-[family-name:var(--font-inter)] font-bold text-white text-5xl">ACCESSORIES</h4>
+              <h4 className="font-[family-name:var(--font-inter)] font-bold text-white text-5xl">STUDY</h4>
+              <h4 className="font-[family-name:var(--font-inter)] font-bold text-white text-5xl">ESSENTIALS</h4>
               <button className="w-4/12 px-4 py-3 rounded-3xl font-[family-name:var(--font-inter)] font-semibold text-2xl text-white bg-[#357D76]">CONTACT NOW</button>
             </div>
             <div className="w-1/2 flex flex-col gap-4 items-end">
-            <p className="w-5/12 text-end font-[family-name:var(--font-montserrat)] font-light text-white">PORTABLECHARGERORPOWERBANK.
-TOTHINKABOUT
-USBDRIVE:FORSTORINGIMPORTANT
-FILESORNOTES.</p>
+            <p className="w-5/12 text-end font-[family-name:var(--font-montserrat)] font-medium text-xl  text-white">WHERE IS THE ESSENTIAL BOX:A
+PRECISE SELECTION OF ESSENTIAL
+PRODUCTS.YOU WILL FIND EVERYTHING
+YOU NEED ON A DAILY BASIS,NO
+MORE,NO LESS.SIMPLE,EFFECTIVE</p>
              <div className="flex items-center gap-3">
-              <span className="font-[family-name:var(--font-montserrat)] text-white">+000 123 456 7890</span>
+              <span className="font-[family-name:var(--font-montserrat)] font-medium text-xl text-white">+000 123 456 7890</span>
               <div className="p-2 bg-white rounded-full text-[#DB6618]"><Phone/></div>
              </div>
              <div className="flex items-center gap-3">
-              <Link className="font-[family-name:var(--font-montserrat)] text-white" href={"/"}>www.studboxx.com</Link>
+              <Link className="font-[family-name:var(--font-montserrat)] font-medium text-xl text-white" href={"/"}>www.studboxx.com</Link>
               <div className="p-2 bg-white rounded-full text-[#DB6618]"><Chain/></div>
              </div>
             </div>

@@ -38,19 +38,19 @@ const TimeCounter = () => {
 
   return (
     
-    <div className="w-6/12 rounded-md py-5 px-10 flex flex-col justify-center gap-8 bg-[#328f85]">
-      <div className="flex items-center justify-center"><p className="font-[family-name:var(--font-montserrat)] font-semibold text-5xl capitalize text-white">{timeLeft.days >= 10 ? timeLeft.days:`0${timeLeft.days}`} days to go</p></div>
+    <div className="w-6/12  rounded-xl py-5 px-10 flex flex-col justify-between gap-12 bg-[#328f85]">
+      <div className="flex items-center justify-center"><p className="font-[family-name:var(--font-montserrat)] font-semibold text-7xl capitalize text-white">{timeLeft.days >= 10 ? timeLeft.days:`0${timeLeft.days}`} days to go</p></div>
       <div className=" flex items-center justify-between">
         <div className="flex flex-col gap-3 items-center text-white">
-            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-5xl">{timeLeft.days >= 10 ? timeLeft.days:`0${timeLeft.days}`}</div>
+            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-7xl">{timeLeft.days >= 10 ? timeLeft.days:`0${timeLeft.days}`}</div>
             <span className="font-[family-name:var(--font-montserrat)] font-light text-base">Days</span>
         </div>
         <div className="flex flex-col gap-3 items-center text-white">
-            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-5xl">{timeLeft.hours >= 10 ? timeLeft.hours:`0${timeLeft.hours}`}</div>
+            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-7xl">{timeLeft.hours >= 10 ? timeLeft.hours:`0${timeLeft.hours}`}</div>
             <span className="font-[family-name:var(--font-montserrat)] font-light text-base">Hours</span>
         </div>
         <div className="flex flex-col gap-3 items-center text-white">
-            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-5xl">{timeLeft.seconds >= 10 ? timeLeft.seconds:`0${timeLeft.seconds}`}</div>
+            <div className="font-[family-name:var(--font-montserrat)] font-semibold text-7xl">{timeLeft.seconds >= 10 ? timeLeft.seconds:`0${timeLeft.seconds}`}</div>
             <span className="font-[family-name:var(--font-montserrat)] font-light text-base">Seconds</span>
         </div>
       </div>

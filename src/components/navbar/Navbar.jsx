@@ -40,9 +40,9 @@ const Navbar = () => {
         )}
        </div>
        <div className="flex-1 flex items-center justify-center gap-3">
-        <input type="text" name="search" placeholder="Search" className="px-3 py-2 rounded-3xl ring-2 ring-neutral-300 "/>
+        <input type="text" name="search" placeholder="Search" className="px-3 py-2 rounded-3xl ring-2 ring-neutral-300 bg-transparent placeholder:text-white focus:outline-none"/>
         <NavbarDropDown>
-        <button className="p-2 bg-transparent hover:bg-neutral-200 active:bg-neutral-100 rounded-full"><MoreHorizontal size={20}/></button>
+        <button className="p-2 bg-transparent text-white hover:bg-neutral-200/40 active:bg-neutral-100 rounded-full"><MoreHorizontal size={20}/></button>
         </NavbarDropDown>
        </div>
     </div>
